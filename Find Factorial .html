@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Factorial in JS</title>
+</head>
+
+<body>
+    <script>
+        var x = prompt("Enter a number");
+        var fact = 1;
+        if (x == 0) {
+            console.log(`${x}'s factorial is 1.10`);
+        }
+        else if (x < 0) {
+            console.log("Factorial of negative number is not possible.");
+        }
+        else {
+            for ( var i=1; i<=x; i++){
+                // console.log(i);
+                fact = fact * i;
+            }
+            console.log(`The factorial of ${x} is ${fact}`);
+        }
+    </script>
+</body>
+
+</html>
