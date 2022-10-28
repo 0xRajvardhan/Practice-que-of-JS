@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest among 3 numbers in JS</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Method-1 
+        var a = prompt("enter first number");
+        var b = prompt("enter second number");
+        var c = prompt("enter third number");
+
+        var x = Math.max(a, b, c);
+
+        console.log(`${a}, ${b}, ${c}:  The largest number is: ${x}`);
+
+
+        // Method-2 
+
+        function check(x, y, z) {
+            if (x >= y && x > z) {
+                // console.log(`${x} is the largest number`);
+                return x;
+            }
+            else if (y > x && y > z){
+                return y;
+            }
+            else{
+                return z;
+            }
+        }
+        var a1 = prompt("enter first number");
+        var b1 = prompt("enter second number");
+        var c1 = prompt("enter third number");
+
+        var X = Math.max(a1, b1, c1);
+
+        console.log(`${a1}, ${b1}, ${c1}:  The largest number is: ${X}`);
+    </script>
+</body>
+
+</html>
