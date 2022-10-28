@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check sign of number in JS</title>
+</head>
+
+<body>
+    <h1>Positive or Negative Sign Checker</h1>
+    <hr>
+    <label for="number">Enter Value:</label>
+    <div>
+        <input type="number" name="checker" id="num" placeholder="Enter Number">
+    </div>
+    <div>
+        <button class="btn" onclick=check()>Check</button>
+    </div>
+    <br>
+    <div>
+        <textarea name="answer" id="ans" cols="20" rows="1"></textarea>
+    </div>
+
+    <script>
+        // method 1 
+        function check() {
+            var x = document.getElementById('num').value;
+
+            // var result = Math.sign(x);
+            if (x > 0) {
+                res = `${x} is positive`;
+            }
+            else if (x == 0) {
+                res = `${x} is zero`;
+            }
+            else {
+                res = `${x} is negative`;
+            }
+
+            document.getElementById('ans').innerText = `${res}`;
+        }
+        // var sign = Math.sign(x);
+        // console.log(`Your number ${x} is ${sign} `);
+    </script>
+</body>
+
+</html>
