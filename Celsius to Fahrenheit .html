@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahreheit in JS</title>
+
+</head>
+
+<body>
+
+    <h1 id="res"></h1>
+    <br>
+    <hr>
+    <label for="cel">
+        <h2>Enter Value</h2>
+    </label>
+    <hr>
+    <div>
+        <input type="number" name="" id="cel" placeholder="Celsius"> Celsius
+    </div>
+    <div>
+        <button class="btn" onclick=convert()>Convert</button>
+    </div>
+    <br>
+    <!-- <div>
+        <textarea name="far" id="far" cols="20" rows="1"></textarea>
+    </div> -->
+
+    <script>
+        function convert() {
+
+            var celsius = document.getElementById('cel').value;
+            alert(celsius);
+            var fahrenheit = (celsius * 1.8) + 32;
+            alert(fahrenheit);
+            console.log(fahrenheit);
+            document.getElementById('res').innerText=`${fahrenheit} Fahrenheit` ;
+        }
+
+    </script>
+</body>
+
+</html>
