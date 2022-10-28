@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating a random number in JS</title>
+</head>
+
+<body>
+    <h1 class="res"></h1>
+    <!-- This is how OTPs are generated -->
+    <script>
+        var x = Math.random(); // it gives random numbers between 0 and 1 
+        console.log("Random number between 0 and 1 is: " + x);
+
+        // Lets generate random numbers between two given numbers 
+
+        // Math.random()*(highest number - lowest number)+ lowest number 
+
+        x  = Math.random() * (9999 - 1000) + 1000;
+        console.log("Random number between 1000 and 9999 is: " + x);
+
+        x  = parseInt(x);
+        console.log("Random number between 10000 and 9999 is: " + x );
+
+    </script>
+</body>
+
+</html>
