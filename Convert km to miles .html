@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert km to miles </title>
+</head>
+
+<body>
+    <h1>Unit length converter</h1>
+    <hr>
+    <label for="number">Enter Value:</label>
+    <div>
+        <input type="number" name="converter" id="value" placeholder="Kilometer">Km
+    </div>
+    <div>
+        <button class="btn" onclick=convert()>Convert</button>
+    </div>
+    <br>
+    <div>
+        <textarea name="answer" id="ans" cols="20" rows="1"></textarea>
+    </div>
+
+
+    <script>
+        function convert() {
+            var kms = document.getElementById('value').value;
+            // alert(kms);
+            const factor = 0.621371;
+            var miles = kms * factor;
+            console.log(miles);
+            // alert(miles);
+            document.getElementById('ans').innerText = `${miles} miles`;
+        }
+    </script>
+</body>
+
+</html>
