@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of a triangle in JS</title>
+</head>
+
+<body>
+    <script>
+        // right angle triangle 
+        // simple formula for this is (base x height)/2 
+        var base = prompt("Enter base length");
+        var height = prompt("Enter height");
+
+        var area = (base * height) / 2;
+
+        console.log("The area of this right angled triangle is ", area);
+
+        console.log('Base: ', base ,' Height: ', height,' Area: ', area);
+
+        // General formula for finding area of triangle AKA Herons Formula 
+        // s = a + b + c 
+        // area = sqrt ( s(s-a)*(s-b)*(s-c);
+
+        var a = parseFloat(prompt('Enter length of side "a" in meters'));
+        var b = parseFloat(prompt('Enter length of side "b" in meters'));
+        var c = parseFloat(prompt('Enter length of side "c" in meters'));
+
+        var s = (a + b + c)/2;
+        console.log(s);
+
+        var temp = s*(s-a)*(s-b)*(s-c);
+        console.log(temp);
+
+        console.log("Area of the given triangle is ", Math.sqrt(temp));
+    </script>
+</body>
+
+</html>
