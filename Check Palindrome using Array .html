@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Palindrome using Array in JS</title>
+</head>
+
+<body>
+    <script>
+        var string = prompt("Enter a string");
+        var stringArray = string.split('');
+        var stringArrayrRev = stringArray.reverse('');
+        var revString = stringArrayrRev.join('');
+        console.log(string);
+        console.log(stringArray);
+        console.log(stringArrayrRev);
+        console.log(revString);
+        
+        if(string==revString){
+            console.log(`YES! ${string} is a palindrome`);
+        }
+        else{
+    console.log(`NO! ${string} is not a palindrome`);
+
+}
+    </script>
+</body>
+
+</html>
