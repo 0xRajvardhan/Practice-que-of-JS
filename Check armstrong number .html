@@ -12,10 +12,14 @@
     <script>
         var number = prompt("Enter a number ");
         var temp = number;
+        var noOfDigits = number.toString().length;
+
+        alert(noOfDigits);
+
         var sum = 0;
         while (temp > 0) {
             var digit = temp % 10;
-            sum += digit ** 3;
+            sum += digit ** noOfDigits;
             temp = parseInt(temp / 10);
 
         }

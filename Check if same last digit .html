@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if same last digit </title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("Enter a");
+        var b = prompt("Enter b");
+        var c = prompt("Enter c");
+
+        var res1 = a % 10;
+        var res2 = b % 10;
+        var res3 = c % 10;
+
+        if (res1 == res2 && res1 == res3) {
+            console.log("YES");
+        }
+        else {
+            console.log("NO");
+        }
+    </script>
+</body>
+
+</html>
