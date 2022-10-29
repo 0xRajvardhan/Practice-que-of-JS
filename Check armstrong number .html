@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check armstrong number in JS</title>
+</head>
+
+<body>
+    <script>
+        var number = prompt("Enter a number ");
+        var temp = number;
+        var sum = 0;
+        while (temp > 0) {
+            var digit = temp % 10;
+            sum += digit ** 3;
+            temp = parseInt(temp / 10);
+
+        }
+        if (sum == number) {
+            console.log(`${number} is an armstrong number`);
+        }
+        else{
+            console.log(`${number} is not an armstrong number`);
+        }
+
+    </script>
+</body>
+
+</html>
